@@ -4,11 +4,12 @@ body{
 
 .game-area{
   position: relative;
-  margin: 50px auto;
+  margin: auto;
   width: 500px;
   height: 500px;
   border: 10px solid #0c0a0a;
   background-color: beige;
+  border-top: 0px solid;
 }
 
 .snake-dot {
@@ -29,4 +30,21 @@ body{
   border: 1px solid white;
   border-radius: 7px;
   z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 500px;
+  margin: 20px auto 0px;
+  background-color: beige;
+  border: 10px solid;
+}
+
+.header div {
+  font-size: larger;
+  margin: 10px 10px 5px 10px;
+  font-variant: petite-caps;
+  font-weight: 700;
 }

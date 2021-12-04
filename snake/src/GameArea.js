@@ -134,9 +134,15 @@ class GameArea extends Component {
 
     render() {
         return (
-            <div className="game-area">
-                <Snake snakeDots={this.state.snakeDots} />
-                <Food dot={this.state.food} />
+            <div>
+                <div className="header">
+                    <div>Snake-Game</div>
+                    <div>Snake Length: {this.state.snakeDots.length}</div>
+                </div>
+                <div className="game-area">
+                    <Snake snakeDots={this.state.snakeDots} />
+                    <Food dot={this.state.food} />
+                </div>
             </div>
         )
     }
