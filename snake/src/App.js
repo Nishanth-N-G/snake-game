@@ -1,13 +1,13 @@
 
 import './App.css';
-// import GameArea from './GameArea';
+import GameArea from './GameArea';
 import GameAreaFunc from './GameAreaFunc';
 
 function App() {
   return (
     <div>
-      {/* <GameArea /> */}
-      <GameAreaFunc />
+      <GameArea />
+      {/* <GameAreaFunc /> */}
     </div>
   );
 }
