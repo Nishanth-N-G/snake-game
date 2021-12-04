@@ -1,3 +1,7 @@
+This is the snake game which has a small snake and its food in some place inside the border of gamearea. Upon eating the snake food, the snake grows. This snake movement is created using illusion of movement with the help of adding a section of the snake to the front(pushing) and removing a section of the snake from the back(shifting) from the array of snake. Upon eating food, the addition of an array element happens and that's how the snake grows. The movement happens for some setinterval and the snake can move upon the keyboard arrows inputs. So, this game has some function with check for snake crashing border or snake body itself which triggers gameover function and the snake moves to initial state.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
