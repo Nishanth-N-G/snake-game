@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Food from './components/Food'
 import Snake from './components/Snake'
+import swal from 'sweetalert';
 
 const getRandomCoordinates = () => {
     let min = 1;
@@ -126,10 +127,13 @@ class GameArea extends Component {
     }
 
     gameOver = () => {
-        alert(`Game over. Snake length = ${this.state.snakeDots.length} `);
-        this.setState(
+        // alert("Game over", `Snake length = ${this.state.snakeDots.length} `);
+
+        swal("Oops!", "Game Over!", "error");
+
+        (this.setState(
             initialState
-        )
+        ));
     }
 
     render() {
@@ -137,7 +141,7 @@ class GameArea extends Component {
             <div>
                 <div className="header">
                     <div>Snake-Game</div>
-                    <div>Snake Length: {this.state.snakeDots.length}</div>
+                    <div>Snake Length: {this.state.snakeDots.length - 2}</div>
                 </div>
                 <div className="game-area">
                     <Snake snakeDots={this.state.snakeDots} />
